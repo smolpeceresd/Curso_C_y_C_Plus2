@@ -10,7 +10,6 @@
 #define DIB_HEADER_SIZE 40
 
 
-
 void free_bmp(BMPImage *image)
 {
     free(image);
@@ -76,37 +75,38 @@ BMPImage *read_bmp(FILE *fp, char **error)
 
 bool write_bmp(FILE *fp, BMPImage *image, char **error){
     // Escribir el encabezado BMP en el archivo
-        fwrite(&image->header, sizeof(BMPHeader), 1, fp);
+    fwrite(&image->header, sizeof(BMPHeader), 1, fp);
 
-        // Copiar los datos de la imagen, cambiando las zonas blancas por rojas
-        unsigned char* dataBuffer = (unsigned char*)malloc(image->header.image_size_bytes);
-        if (dataBuffer == NULL) {
-            *error = "Error al asignar memoria para los datos de la imagen.";
-            return false;
+    // Copiar los datos de la imagen, cambiando las zonas blancas por rojas
+    unsigned char* dataBuffer = (unsigned char*)malloc(image->header.image_size_bytes);
+    if (dataBuffer == NULL) {
+        *error = "Error al asignar memoria para los datos de la imagen.";
+        return false;
+    }
+
+    memcpy(dataBuffer, image->data, image->header.image_size_bytes); // Copiar los datos de la imagen
+
+    int bytesPerPixel = image->header.bits_per_pixel / 8;
+    int imageSize = image->header.width_px * image->header.height_px * bytesPerPixel;
+    for (int i = 0; i < imageSize; i += bytesPerPixel) {
+
+        if (dataBuffer[i] == 204 && dataBuffer[i + 1] == 72 && dataBuffer[i + 2] == 63) {
+
+            dataBuffer[i] = 35;//azul
+            dataBuffer[i + 1] = 54;// verde
+            dataBuffer[i + 2] = 95;//rojo
         }
 
-        memcpy(dataBuffer, image->data, image->header.image_size_bytes); // Copiar los datos de la imagen
+    }
 
-        int bytesPerPixel = image->header.bits_per_pixel / 8;
-        int imageSize = image->header.width_px * image->header.height_px * bytesPerPixel;
 
-        for (int i = 0; i < imageSize; i += bytesPerPixel) {
+    // Escribir los datos de la imagen modificados en el archivo
+    fwrite(dataBuffer, 1, image->header.image_size_bytes, fp);
 
-            if (dataBuffer[i] == 255 && dataBuffer[i + 1] == 255 && dataBuffer[i + 2] == 255) {
-                // Cambiar el color a rojo (R: 255, G: 0, B: 0)
-                //dataBuffer[i] = 255;//azul
-                dataBuffer[i + 1] = 0;// verde
-                //dataBuffer[i + 2] = 255;//rojo
-            }
-        }
+    // Liberar la memoria asignada
+    free(dataBuffer);
 
-        // Escribir los datos de la imagen modificados en el archivo
-        fwrite(dataBuffer, 1, image->header.image_size_bytes, fp);
-
-        // Liberar la memoria asignada
-        free(dataBuffer);
-
-        return true;
+    return true;
 }
 
 

@@ -8,7 +8,7 @@ int main()
 {
     char *error = NULL;
     FILE *fichero,*newFichero;
-    fopen_s(&fichero,"Paisaje.bmp", "rb");
+    fopen_s(&fichero,"CuadradosP.bmp", "rb");
 
 
     if (fichero == NULL){
