@@ -32,5 +32,4 @@
 *.app
 */build*/*
 !*/build-Purdue*/*.bmp
-
 *.pro.user
