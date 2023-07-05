@@ -1,0 +1,13 @@
+// clave palabras valor id padre rama
+Saludo	Hola Saludos Buenas Hello	Hola,en que puedo ayudarte. Soy capaz de decirte informacion de vehiculos y sobre las marcas	0	-1	0
+Marca	Seat Cupra Ford Skoda	Para darte informacion de un modelo de la marca, necesito que me digas el modelo	1	0	1
+Modelo	Leon Formentor Focus Octavia	Dime que quieres hacer, escribe el nombre de la marca, el modelo y si quieres ver el precio, kilometraje o solo informacion	2	-1	1
+Precio	precio Precio Coste coste	_	3	2	1
+KM	km KM Km Kilometraje kilometraje	_	4	2	1
+Informacion	informacion Informacion	_	5	2	1
+Concesionario	concesionario Concesionario	Puedes saber las marcas del concesionario y donde se ubica.	6	0	2
+Marcas	marcas Marcas	_	7	6	2
+Ubicacion	donde Donde Ubicacion ubicacion	_	8	6	2
+Despedida	_	Adios,espero verte pronto	_	_	_
+Inicio	_	Hola, soy Ted tu asistente. En que puedo ayudarte?	_	_	_
+Default	_	Pasando con un agente	_	_	_

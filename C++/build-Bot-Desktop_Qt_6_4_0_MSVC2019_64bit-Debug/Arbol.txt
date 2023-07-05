@@ -1,0 +1,64 @@
+
+Raiz
+--------------------------------
+Nodo 0
+Palabras: -Hola-Saludos-Buenas-Hello
+Clave: Saludo
+Respuesta: Hola,en que puedo ayudarte. Soy capaz de decirte informacion de vehiculos y sobre las marcas
+--------------------------------
+Lista Decrecha
+--------------------------------
+Nodo 6
+Palabras: -concesionario-Concesionario
+Clave: Concesionario
+Respuesta: Puedes saber las marcas del concesionario y donde se ubica.
+--------------------------------
+Rama
+--------------------------------
+Nodo 7
+Palabras: -marcas-Marcas
+Clave: Marcas
+Respuesta: _
+--------------------------------
+Rama
+--------------------------------
+Nodo 7
+Palabras: -donde-Donde-Ubicacion-ubicacion
+Clave: Ubicacion
+Respuesta: _
+--------------------------------
+Lista Izquierda
+--------------------------------
+Nodo 1
+Palabras: -Seat-Cupra-Ford-Skoda
+Clave: Marca
+Respuesta: Para darte informacion de un modelo de la marca, necesito que me digas el modelo
+--------------------------------
+Siguiente nodo Principal
+--------------------------------
+Nodo 2
+Palabras: -Leon-Formentor-Focus-Octavia
+Clave: Modelo
+Respuesta: Dime que quieres hacer, escribe el nombre de la marca, el modelo y si quieres ver el precio, kilometraje o solo informacion
+--------------------------------
+Rama
+--------------------------------
+Nodo 3
+Palabras: -precio-Precio-Coste-coste
+Clave: Precio
+Respuesta: _
+--------------------------------
+Rama
+--------------------------------
+Nodo 4
+Palabras: -km-KM-Km-Kilometraje-kilometraje
+Clave: KM
+Respuesta: _
+--------------------------------
+Rama
+--------------------------------
+Nodo 5
+Palabras: -informacion-Informacion
+Clave: Informacion
+Respuesta: _
+--------------------------------

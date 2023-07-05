@@ -31,5 +31,6 @@
 *.out
 *.app
 */build*/*
-!*/build-Purdue*/*.bmp
+!*/build-*/*.bmp
+!*/build-*/*.txt
 *.pro.user
