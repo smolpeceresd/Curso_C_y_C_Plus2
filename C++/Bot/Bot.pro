@@ -4,12 +4,16 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        accion.cpp \
-        basico.cpp \
         bot.cpp \
-        main.cpp
+        concesionario.cpp \
+        main.cpp \
+        nodo.cpp \
+        vehiculo.cpp
 
 HEADERS += \
-    accion.h \
-    basico.h \
-    bot.h
+    bot.h \
+    concesionario.h \
+    funciones.h \
+    nodo.h \
+    structs.h \
+    vehiculo.h

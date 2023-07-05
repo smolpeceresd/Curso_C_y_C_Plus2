@@ -1,33 +1,34 @@
 #ifndef BOT_H
 #define BOT_H
-
 #include <iostream>
-#include <vector>
-#include <basico.h>
-#include <accion.h>
+#include <map>
+#include <nodo.h>
+#include <structs.h>
 using namespace std;
-
 class Bot
 {
 public:
     Bot();
     ~Bot();
 
-    const vector<Accion> &getAcciones() const;
-    void setAcciones(const vector<Accion> &newAcciones);
 
-    const vector<Basico> &getItems_Basicos() const;
-    void setItems_Basicos(const vector<Basico> &newItems_Basicos);
+    Nodo *getRaiz() const;
+    void setRaiz(Nodo *newRaiz);
 
-    void addBasico(const Basico &newBasico);
-    void addaccion(const Accion &newAccion);
 
-    void printBasicos();
-    void printAcciones();
+    bool buildLista(Nodo *newNodo,int rama, int padre);
+    bool AddRama(Nodo *list,Nodo *newNodo,int padre);
+
+    const map<string, string> &getMapa_respuesta() const;
+    void setMapa_respuesta(const map<string, string> &newMapa_respuesta);
+    void addMapa(const string &clave,const string &valor);
+    Decision tomaDeciosiones(const vector<string> &input);
+    void printLista()const;
 
 private:
-    vector<Basico> Items_Basicos;
-    vector<Accion> Acciones;
+    Nodo *raiz;
+    map<string,string> Mapa_respuesta;
+
 };
 
 #endif // BOT_H

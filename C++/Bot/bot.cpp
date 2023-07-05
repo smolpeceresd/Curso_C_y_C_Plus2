@@ -1,5 +1,5 @@
 #include "bot.h"
-
+#include <fstream>
 Bot::Bot()
 {
 
@@ -7,51 +7,99 @@ Bot::Bot()
 
 Bot::~Bot()
 {
-    cout<<"\nBorrando de Bot";
+
 }
 
-const vector<Accion> &Bot::getAcciones() const
+Nodo *Bot::getRaiz() const
 {
-    return Acciones;
+    return raiz;
 }
 
-void Bot::setAcciones(const vector<Accion> &newAcciones)
+void Bot::setRaiz(Nodo *newRaiz)
 {
-    Acciones = newAcciones;
+    raiz = newRaiz;
 }
 
-const vector<Basico> &Bot::getItems_Basicos() const
+const map<string, string> &Bot::getMapa_respuesta() const
 {
-    return Items_Basicos;
+    return Mapa_respuesta;
 }
 
-void Bot::setItems_Basicos(const vector<Basico> &newItems_Basicos)
+void Bot::setMapa_respuesta(const map<string, string> &newMapa_respuesta)
 {
-    Items_Basicos = newItems_Basicos;
+    Mapa_respuesta = newMapa_respuesta;
 }
 
-void Bot::addBasico(const Basico &newBasico)
+void Bot::addMapa(const string &clave, const string &valor)
 {
-    this->Items_Basicos.push_back(newBasico);
+    this->Mapa_respuesta.insert(pair<string,string>(clave,valor));
 }
 
-void Bot::addaccion(const Accion &newAccion)
+Decision Bot::tomaDeciosiones(const vector<string> &input)
 {
-    this->Acciones.push_back(newAccion);
+    Decision inicio;
+    this->getRaiz()->tomaDecisiones(this->getRaiz(),&inicio,input);
+    return inicio;
 }
 
-void Bot::printBasicos()
+void Bot::printLista() const
 {
-    cout<<"\n Elementos Basicos: ";
-    for(const Basico &basico:this->getItems_Basicos()){
-        cout<<"\n"<<basico.getTag()<<": "<<basico.getRespuesta()<<" Memoria: ";
+    ofstream fichero;fichero.open("Arbol.txt",ios::out | ios::trunc);
+    cout<<"\nRaiz";
+    fichero<<"\nRaiz";
+    this->getRaiz()->printNodo(this->getRaiz(),this->getMapa_respuesta(),fichero);
+    fichero.close();
+}
+
+bool Bot::buildLista(Nodo *newNodo, int rama, int padre)
+{
+    if(this->getRaiz()==NULL||newNodo->getId_nodo()==0){
+        this->setRaiz(newNodo);
+        return true;
+    }else{
+        if(rama==1){
+            if(this->getRaiz()->getNodoIzq()==NULL && padre==0){
+                this->getRaiz()->setNodoIzq(newNodo);
+                return true;
+            }else{
+                return AddRama(this->getRaiz()->getNodoIzq(),newNodo,padre);
+            }
+        }else{
+            if(this->getRaiz()->getNodoDrc()==NULL && padre==0){
+                this->getRaiz()->setNodoDrc(newNodo);
+                return true;
+            }else{
+                return AddRama(this->getRaiz()->getNodoDrc(),newNodo,padre);
+            }
+        }
     }
+    return false;
 }
 
-void Bot::printAcciones()
-{
-    cout<<"\n Acciones: ";
-    for(const Accion &accion:this->getAcciones()){
-        cout<<"\nAccion "<<accion.getIndex_accion()<<"\nPalabras clave: "<<accion.getPalabras()<<"\nRespuesta: "<<accion.getRespuesta();
-    }
+bool Bot::AddRama(Nodo *list, Nodo *newNodo, int padre){
+   Nodo *aux=list;
+   if(padre == -1){
+       while (aux->getNodoIzq()!=NULL) {
+           aux=aux->getNodoIzq();
+       }
+       aux->setNodoIzq(newNodo);
+       return true;
+   }else{
+       while(aux->getId_nodo()!=padre){
+           aux=aux->getNodoIzq();
+       }
+       if(aux->getId_nodo()==padre){
+           if(aux->getNodoDrc()==NULL){
+               aux->setNodoDrc(newNodo);
+           }else{
+               while(aux->getNodoDrc()!=NULL){
+                   aux=aux->getNodoDrc();
+               }
+               aux->setNodoDrc(newNodo);
+               return true;
+           }
+           return true;
+       }
+   }
+   return false;
 }

@@ -162,20 +162,6 @@ bool changeColor(FILE *fp, BMPImage *image, char **error)
 
 BMPImage *crop_bmp(BMPImage *image, int x, int y, int w, int h, char **error)
 {
-    /*
-    crop bmp(BMPImage✶ image, int x, int y, int w, int h, char✶✶ error)
-→ return type: BMPImage✶
-Create a new image containing the cropped portion of the given image.
-x is the start index, from the left edge of the input image.
-y is the start index, from the top edge of the input image.
-w is the width of the new image.
-h is the height of the new image.
-This will create a new BMPImage, including a BMPHeader that reflects the width and height (and related fields) for the new image (w and h). Copy in pixel data from the original image into the new image data.
-Handle run-time errors using the method described above.
-That means in case of an error, set *error to the address of a descriptive message on the heap and return NULL.
-It is the caller's responsibility to free the memory for the error message.
-Since crop_bmp(…) does not read or write any files, the error handling will be somewhat simpler here.
-    */
 
     BMPImage *imagen_ = (BMPImage *)malloc(sizeof(BMPImage));
     if (imagen_ == NULL)
