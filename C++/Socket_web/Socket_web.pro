@@ -7,5 +7,4 @@ SOURCES += \
         main.cpp
         LIBS += -lws2_32
 
-HEADERS += \
-    funciones.h
+HEADERS +=

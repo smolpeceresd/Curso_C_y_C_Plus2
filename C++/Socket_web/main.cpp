@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <ws2tcpip.h>
-#include <string>
 
 int main()
 {
@@ -60,13 +59,9 @@ int main()
         return -1;
     }
 
-    // Prepare the HTTP GET request with the hostname
-    std::string request = "GET / HTTP/1.1\r\nHost: ";
-    request += hostname;
-    request += "\r\nConnection: close\r\n\r\n";
-
-    // Send the HTTP GET request to the server
-    if (send(SendingSocket, request.c_str(), request.length(), 0) == SOCKET_ERROR)
+    // Send an HTTP GET request to the server
+    const char* request = "GET / HTTP/1.1\r\nHost: example.com\r\nConnection: close\r\n\r\n";
+    if (send(SendingSocket, request, strlen(request), 0) == SOCKET_ERROR)
     {
         printf("Failed to send the request\n");
         closesocket(SendingSocket);
@@ -76,21 +71,18 @@ int main()
     }
 
     // Receive the response from the server and print it
-    std::string buffer;
-    char tempBuffer[4096];
+    char buffer[4096];
     int bytesRead;
-    while ((bytesRead = recv(SendingSocket, tempBuffer, sizeof(tempBuffer) - 1, 0)) > 0)
+    while ((bytesRead = recv(SendingSocket, buffer, sizeof(buffer) - 1, 0)) > 0)
     {
-        tempBuffer[bytesRead] = '\0';  // Add null-terminator to treat tempBuffer as a string
-        buffer += tempBuffer;
+        buffer[bytesRead] = '\0';  // Add null-terminator to treat buffer as a string
+        printf("%s", buffer);
     }
 
     // Close the socket and clean up
     closesocket(SendingSocket);
     WSACleanup();
     freeaddrinfo(result);
-
-    printf("%s", buffer.c_str());  // Print the content of the buffer as a string
 
     return 0;
 }
