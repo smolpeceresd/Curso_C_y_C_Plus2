@@ -1,0 +1,21 @@
+#Descripcion	Monto Fecha
+Efectivo y equivalente de efectivo	10000	sin fecha de vencimiento
+Cuentas por cobrar	20000	31/12/2023
+Inventarios	30000	sin fecha de vencimiento
+Bonos de corto plazo	15000	15/09/2023
+Inversiones	50000	sin fecha de vencimiento
+Equipos	100000	sin fecha de vencimiento
+Terreno	200000	sin fecha de vencimiento
+Propiedades	150000	sin fecha de vencimiento
+Seguros	5000	30/06/2024
+Patentes o licencias	25000	sin fecha de vencimiento
+Cuentas por pagar	15000	31/10/2023
+Provisiones y deudas a corto plazo	10000	sin fecha de vencimiento
+Vencimientos actuales de deudas a largo plazo	20000	15/12/2023
+Nomina y pago a trabajadores externos	8000	sin fecha de vencimiento
+Impuestos	12000	sin fecha de vencimiento
+Pasivos diferidos de impuestos	5000	sin fecha de vencimiento
+Deudas a largo plazo	80000	sin fecha de vencimiento
+Otras obligaciones	15000	sin fecha de vencimiento
+Fondos propios	300000	sin fecha de vencimiento
+Ganancias retenidas	140000	sin fecha de vencimiento

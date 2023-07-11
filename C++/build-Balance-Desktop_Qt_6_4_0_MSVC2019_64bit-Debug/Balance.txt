@@ -1,0 +1,125 @@
+
+-----------------------------------------
+Descripcion: Efectivo y equivalente de efectivo
+Monto: 10000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Bonos de corto plazo
+Monto: 15000
+Fecha Vencimiento 15/09/2023
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Cuentas por cobrar
+Monto: 20000
+Fecha Vencimiento 31/12/2023
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Inventarios
+Monto: 30000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Seguros
+Monto: 5000
+Fecha Vencimiento 30/06/2024
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Patentes o licencias
+Monto: 25000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Inversiones
+Monto: 50000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Equipos
+Monto: 100000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Propiedades
+Monto: 150000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Terreno
+Monto: 200000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Nomina y pago a trabajadores externos
+Monto: 8000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Provisiones y deudas a corto plazo
+Monto: 10000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Impuestos
+Monto: 12000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Cuentas por pagar
+Monto: 15000
+Fecha Vencimiento 31/10/2023
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Vencimientos actuales de deudas a largo plazo
+Monto: 20000
+Fecha Vencimiento 15/12/2023
+Categoria: Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Pasivos diferidos de impuestos
+Monto: 5000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Otras obligaciones
+Monto: 15000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Deudas a largo plazo
+Monto: 80000
+Fecha Vencimiento sin fecha de vencimiento
+Categoria: No Circulante
+-----------------------------------------
+-----------------------------------------
+Descripcion: Ganancias retenidas
+Monto: 140000
+Fecha Vencimiento sin fecha de vencimiento
+-----------------------------------------
+-----------------------------------------
+Descripcion: Fondos propios
+Monto: 300000
+Fecha Vencimiento sin fecha de vencimiento
+-----------------------------------------
+Total Activos:		 605000
+Total Pasivos:		 165000
+Total Patrimonio:	440000
+Comprobante: 
+ Activos = Pasivos + Patrimonios 
+ 605000 = 605000

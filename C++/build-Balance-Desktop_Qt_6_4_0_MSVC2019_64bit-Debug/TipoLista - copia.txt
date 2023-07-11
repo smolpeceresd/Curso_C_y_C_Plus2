@@ -1,0 +1,21 @@
+//Tipo	Circulante	Nombre
+Activo	1	Efectivo y equivalente de efectivo
+Activo	1	Cuentas por cobrar
+Activo	1	Inventarios
+Activo	1	Bonos de corto plazo
+Activo	0	Inversiones
+Activo	0	Equipos
+Activo	0	Terreno
+Activo	0	Propiedades
+Activo	0	Seguros
+Activo	0	Patentes o licencias
+Pasivo	1	Cuentas por pagar
+Pasivo	1	Provisiones y deudas a corto plazo
+Pasivo	1	Vencimientos actuales de deudas a largo plazo
+Pasivo	1	Nomina y pago a trabajadores externos
+Pasivo	1	Impuestos
+Pasivo	0	Pasivos diferidos de impuestos
+Pasivo	0	Deudas a largo plazo
+Pasivo	0	Otras obligaciones
+Patrimonio	-1	Fondo propio
+Patrimonio	-1	Ganacias retenidas

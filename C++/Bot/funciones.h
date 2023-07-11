@@ -39,13 +39,14 @@ void leerFichero(const string &nombreFich, Bot *bot){
     }else{
         while(!fich.eof()){
             getline(fich,linea);
+            cout<<"\n"<<linea;
             if(linea.find("/")==-1){
-                param=trocea(linea,'\t');
+               /* param=trocea(linea,'\t');
                 if(param.at(0)!="Despedida"&&param.at(0)!="Default"&&param.at(0)!="Inicio"){
                     Nodo *newNodo = new Nodo(trocea(param.at(1),' '),param.at(0),stoi(param.at(3)));
                     bot->buildLista(newNodo,stoi(param.at(5)),stoi(param.at(4)));
                 }
-                bot->addMapa(param.at(0),param.at(2));
+                bot->addMapa(param.at(0),param.at(2));*/
             }
         }
        // bot->printLista();
