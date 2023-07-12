@@ -1,196 +1,287 @@
-
-
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<body>
+	 <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PJN9BP8');
-
-
-
-
-Saltar al contenido principal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Noticias
-
-
-La Biblioteca
-
-
-Catálogo
-
-
-Biblioteca Digital
-
-
-Redes Federales
-
-
-Programas y Proyectos
-
-
-Actividades
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-buscar:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-29bf
-
-
-
-
-
- Inicio
-Programas y proyectos
-
-Programas y proyectos
-
-
-Presentamos las acciones que realizamos para preservar y difundir nuestro acervo bibliográfico.
-
-
-
-
-
-
-
-
-
-
-
-
-
-MHEDAR
-
-El programa Memoria e Historia de la Educación Argentina busca contribuir a la investigación y al conocimiento del pasado de la educación en nuestro país.
-
- 
-
-     
-
-
-
-
-
-
-Proyecto de Preservación
-
-Implementamos políticas de preservación para garantizarte el acceso a largo plazo al patrimonio documental que se alberga en nuestra biblioteca.
-
- 
-
-     
-
-
-
-
-
-
-
-
-
-
-
-Mujeres educadoras argentinas
-
-Un homenaje a aquellas mujeres que fueron pioneras y a aquellas mujeres que las sucedieron proponiéndose el gran desafío de establecer un dispositivo escolar, organizado y centralizado, con la meta de aplicar en la sociedad, en forma concreta, sus ideas sobre la educación.
-
- 
-
-     
-
-
-
-
-
-
-Libros como puentes
-
-Una invitación al encuentro de niños, niñas y familias con los libros que habitan las bibliotecas escolares de nuestro país. A través de propuestas, estrategias, guías y sugerencias de actividades, buscamos generar lazos que acompañen las situaciones de lectura y escritura que se realizan desde las familias y las instituciones educativas.
-
- 
-
-     
-
-
-
-
-
-
-
-
-
-
+})(window,document,'script','dataLayer','GTM-PJN9BP8');</script>
+<!-- End Google Tag Manager -->
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJN9BP8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a href="#content" class="sr-only sr-only-focusable">Saltar al contenido principal</a>
+<!--nav class="navbar navbar-biblio affix-home" data-spy="affix" data-offset-top="0"-->
+<nav class="navbar navbar-biblio">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-10">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="/"><img src="/img/bnm.png" width="100" alt="Ir a la página de inicio de la Biblioteca Nacional de Maestras y Maestros"></a>
+						</div>
+					</div>
+
+					<div class="col-sm-10">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="collapse navbar-collapse" id="myNavbar">
+									<ul class="nav navbar-nav">
+										<li class="dropdown">
+											<a class="no-dropdown-toggle" href="/novedades/">Noticias</a>
+										</li>
+										<li class="dropdown">
+											<a class="no-dropdown-toggle" href="/la-biblioteca/">La Biblioteca</a>
+										</li>
+                                        <li class="dropdown">
+											<a class="no-dropdown-toggle" href="http://koha.educacion.gob.ar/">Catálogo</a>
+										</li>
+										<li class="dropdown">
+											<a class="no-dropdown-toggle" href="/catalogos/">Biblioteca Digital</a>
+										</li>
+										<li class="dropdown">
+											<a class="no-dropdown-toggle" href="/redes_federales/">Redes Federales</a>
+										</li>
+									    <li class="dropdown">
+											<a class="no-dropdown-toggle" href="/proyectos/">Programas y Proyectos</a>
+										</li>
+										<li class="dropdown">
+											<a class="no-dropdown-toggle" href="/agenda/">Actividades</a>
+										</li>
+
+										<li class="redes-sociales-menu">
+											<a class="redes-sociales-menu-link" href="/formularios/sugerencias/suscripcion.php"><span class="redes-sociales-menu-icon fa fa-envelope fa-lg"></span></a>
+											<a class="redes-sociales-menu-link" href="https://www.facebook.com/BNMArgentina"><span class="redes-sociales-menu-icon fa fa-facebook-f fa-lg"></span></a>	
+											<a class="redes-sociales-menu-link" href="https://www.instagram.com/BNMArgentina"><span class="redes-sociales-menu-icon fa fa-instagram-f fa-lg"></span></a>								
+										       <a class="redes-sociales-menu-link" href="https://twitter.com/BNMArgentina"><span class="redes-sociales-menu-icon fa fa-twitter fa-lg"></span></a>
+											<a class="redes-sociales-menu-link" href="https://www.youtube.com/BNMArgentina"><span class="redes-sociales-menu-icon fa fa-youtube-play fa-lg"></span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row" style="padding-left: 25px;">
+							<div class="col-sm-12">
+								<div class="nav">
+									<form method="get" action="https://bnm.educacion.gob.ar/catalogo/Search/Results" name="searchForm" id="searchForm" class="form-inline search" role="search">
+										<div class="input-group col-xs-12 col-md-8">
+											<label for="searchForm_lookfor" class="sr-only">buscar:</label>
+											
+											<input id="searchForm_lookfor" type="text" name="lookfor" class="form-control typeSelector:searchForm_type ui-autocomplete-input" style="font-size: 14px; margin-top: 15px;" placeholder="Buscá en el catálogo..."  autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" size="60%;">
+												<div class="input-group-btn">
+													<button class="btn btn-lg btn-default" type="submit" style="margin-left: 5px;" ><i class="glyphicon glyphicon-search" aria-hidden="true"></i></button>
+												</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="nav navbar-nav navbar-right-biblio pull-right">
+							<!--li><a href="/formularios/sugerencias/suscripcion.php"><a href="mailto:sugerenciasbnm@educacion.gob.ar"><span class="fa fa-envelope fa-lg"></span></a></li-->
+							<li><a href="https://www.facebook.com/BNMArgentina"><span class="fa fa-facebook fa-lg"></span></a></li>
+							<li><a href="https://www.instagram.com/BNMArgentina"><span class="fa fa-instagram fa-lg"></span></a></li>
+							<li><a href="https://twitter.com/BNMArgentina"><span class="fa fa-twitter fa-lg"></span></a></li>
+							<li><a href="https://www.youtube.com/BNMArgentina"><span class="fa fa-youtube-play fa-lg"></span></a></li>
+						</ul>
+					</div><div id="content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<div>
+240a
+	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <section class="container principal">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                  
+<div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+            <a href="http://www.bnm.me.gov.ar/giga1/documentos/EL008240.pdf"><img src="slide/images/mercosur.jpg" alt="Mercosur Lee"><br>
+             <div class="carousel-caption">Autores de Argentina, Bolivia, Brasil, Chile, Paraguay y Uruguay se entretejen en el libro "Mercosur Lee".</div></a>
+           </div>
+           <div class="item">
+            <a href="http://www.bnm.me.gov.ar/giga1/documentos/EL008258.pdf"><img src="slide/images/atelier.jpg" alt="Atelier poético"><br>
+             <div class="carousel-caption">Invitamos a descargar este libro producto del “Taller de escritura destructiva”, organizado por la BNM junto con la OEI.</div></a>
+           </div>
+            <div class="item">
+            <a href="http://www.bnm.me.gov.ar/giga1/documentos/EL008279.pdf"><img src="slide/images/actas.jpg" alt="Actas del Consejo"><br>
+             <div class="carousel-caption">Invitamos a consultar la descripción archivística del Fondo del Consejo Nacional de Educación que se encuentra en el BNM.</div></a>
+           </div>
+            <div class="item">
+            <a href="http://www.bnm.me.gov.ar/giga1/monitor/SNIE/SNIE-2023-N1.pdf"><img src="slide/images/snie.jpg" alt="SNIE"><br>
+             <div class="carousel-caption">Presentamos el primer número de la Revista Oficial del Sistema Nacional de Información Educativa (SNIE).</div></a>
+           </div>
+                 <!--ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol--> 
+           </div>
+           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Posterior</span>
+            </a>
+        </div>
+  
+ <!--div id="grid" class="cont">
+            <div class="row">
+                <div class="col-sm-12 separador-bloques-header">
+                    <div class="row">
+                        <div class="col-sm-4"><div class="separador-etiqueta"><h4 class="pull-left">Agenda de actividades</h4></div></div>
+                        <div class="col-sm-8"><div class="separador-vermas"><a class="btn btn-danger btn-sm pull-right" href="agenda/">ver todas <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="row">     
+</div>
+<div class="row" >
+    <div class="col-sm-12 espaciador"></div>
+</div-->
+
+  <div class="panel-separator padding-40"></div>
+  <div id="grid" class="cont">
+            <div class="row">
+                <div class="col-sm-12 separador-bloques-header">
+                    <div class="row">
+                        <div class="col-sm-4"><div class="separador-etiqueta"><h4 class="pull-left">Colecciones digitales</h4></div></div>
+                        <div class="col-sm-8"><div class="separador-vermas"><a class="btn btn-danger btn-sm pull-right" href="http://www.bnm.me.gov.ar/catalogos/">ver todas <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div></div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+<div class="panel-separator"></div>  
+    <div class="panel-pane pane-atajos">
+       <div class="pane-content">
+          <div class="row panels-row">
+
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                      <a href="https://bnm.educacion.gob.ar/catalogo/Search/Results?filter%5B%5D=digital_str_mv%3A%22*%22&hiddenFilters%5B%5D=building%3A%22Biblioteca+Nacional+de+Maestras+y+Maestros%22&lookfor=Literatura+infantil&type=Subject&sort=year" class="panel panel-default">
+                                            <div style="background-image: url(/catalogos/img/infantil.jpg);" class="panel-heading panel-heading-lg"></div>
+                                            <div class="panel-body">
+                                                  <h3 class="p-t-2">Literatura infantil y juvenil</h3>
+                                                <div class="text-muted">
+                                                    <p>Literatura de ayer y de hoy. Los clásicos de Hans Christian Andersen, los hermanos Grimm, Charles Perrault, Emilio Salgari, Jonathan Swift, Edmundo De Amicis y Julio Verne conviven con María Elena Walsh, Liliana Bodoc, Elsa Bornemann, Laura Devetach, Gustavo Roldán y otros.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                  <div class="col-xs-12 col-sm-6 col-md-4">  
+                                         <a href="https://bnm.educacion.gob.ar/catalogo/Search/Results?sort=year&hiddenFilters%5B%5D=building%3A%22Biblioteca+Nacional+de+Maestras+y+Maestros%22&type=AllFields&filter%5B%5D=collection%3A%22Recursos+para+bibliotecas+escolares%22" class="panel panel-default">
+                                            <div style="background-image: url(http://www.bnm.me.gov.ar/agenda/img/bibliotecologia.jpg);" class="panel-heading panel-heading-lg"></div>
+                                            <div class="panel-body">
+                                                  <h3 class="p-t-2">Recursos para la biblioteca escolar</h3>
+                                                <div class="text-muted">
+                                                    <p>Variados textos para que los bibliotecarios escolares puedan capacitarse e implementar lo adquirido en la gestión de las bibliotecas del sistema educativo.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div> 
+                                                  
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                         <a href="https://bnm.educacion.gob.ar/catalogo/Search/Results?sort=year&hiddenFilters%5B%5D=building%3A%22Biblioteca+Nacional+de+Maestras+y+Maestros%22&type=AllFields&filter%5B%5D=collection%3A%22Colecci%C3%B3n+del+Ministerio+de+Educaci%C3%B3n%22" class="panel panel-default">
+                                            <div style="background-image:url(/catalogos/img/consejo-educacion.jpg);" class="panel-heading  panel-heading-lg"></div>
+                                            <div class="panel-body">
+                                                <h3 class="p-t-2">Colección del Ministerio de Educación</h3>
+                                                <div class="text-muted">
+                                                    <p>Materiales producidos por las diversas áreas del Ministerio: objetos de aprendizaje, normativa, documentos e imágenes, disponibles para su libre acceso, consulta y descarga.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>                                 
+                           </div>
+                          </div>
+                        </div>
+  <div class="row">
+            <div class="col-sm-12 espaciador"></div>
+        </div>
+        <div id="grid" class="cont">
+            <div class="row">
+                <div class="col-sm-12 separador-bloques-header">
+                    <div class="row">
+                        <div class="col-sm-4"><div class="separador-etiqueta"><h4 class="pull-left">Noticias BNM</h4></div></div>
+                        <div class="col-sm-8"><div class="separador-vermas"><a class="btn btn-danger btn-sm pull-right" href="novedades/">ver todas <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="posts">
+                
+216b
+<div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">10 JUL</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34300"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2023/04/encuentro-bibliotecas-2023.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34300">Encuentro de Bibliotecas Escolares y Pedagógicas en la 47a Feria Internacional del Libro de Buenos Aires</a></h3>La Biblioteca Nacional de Maestras y Maestros presente en una nueva edición del evento literario más emblemático del país.
+
+En esta oportunidad <a href="http://www.bnm.me.gov.ar/novedades/?p=34300">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">11 MAY</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34270"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2023/05/visita2023-05-13.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34270">Las bibliotecas escolares de Florencio Varela presentes en la BNM</a></h3>Más de 70 responsables de bibliotecas escolares de escuelas de Nivel Primario del partido de Florencio Varela participaron ayer de una <a href="http://www.bnm.me.gov.ar/novedades/?p=34270">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">12 ABR</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34256"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2023/04/encuentro-bibliotecas-2023.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34256">Ya llega el Encuentro de Bibliotecas Escolares y Pedagógicas</a></h3>La BNM invita a bibliotecarias y bibliotecarios a participar en el Encuentro de Bibliotecas Escolares y Pedagógicas que se realizará en <a href="http://www.bnm.me.gov.ar/novedades/?p=34256">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">28 MAR</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34245"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2023/03/la-rioja5.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34245">Encuentro, capacitación y experiencias en bibliotecas escolares de La Rioja</a></h3>Bibliotecarias y bibliotecarios de distintas localidades de La Rioja estuvieron presentes en un encuentro con la directora de la BNM, Laura <a href="http://www.bnm.me.gov.ar/novedades/?p=34245">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">23 MAR</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34235"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2023/03/elefante-ocupa-espacio.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34235">Un elefante ocupa mucho espacio. Un libro infantil que la dictadura prohibió</a></h3>Elsa Bornemann (Buenos Aires, 1952-2013) fue una escritora y docente argentina, nacida en una familia de inmigrantes. Además de una prolífica <a href="http://www.bnm.me.gov.ar/novedades/?p=34235">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">26 ENE</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34203"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2023/01/aguapey.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34203">Aguapey: vuelven las capacitaciones exprés</a></h3>Como parte de la oferta de capacitación y actualización profesional 2023, la Biblioteca Nacional de Maestras y Maestros retoma las capacitaciones <a href="http://www.bnm.me.gov.ar/novedades/?p=34203">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">24 NOV</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34138"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2022/11/FOTO-1-web.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34138">Homenaje a Alejandra Pizarnik en el Taller de Escritura Poética "En el fondo de todo jardín hay un jardín"</a></h3>En el marco de la exposición “Flora Alejandra. Los jardines de Pizarnik” se realizó el Taller de escritura poética: “En el <a href="http://www.bnm.me.gov.ar/novedades/?p=34138">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">24 OCT</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34050"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2022/10/hemeroteca-ingresos.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34050">Nuevos ingresos a la Hemeroteca: Novedades Educativas</a></h3>En "Prever, planificar y organizar lo incierto. Claves didácticas para escenarios desafiantes", escrito por Mónica Coronado, se postula la enseñanza estratégica <a href="http://www.bnm.me.gov.ar/novedades/?p=34050">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">23 OCT</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34132"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2022/12/noche-museos-2022-11.jpeg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34132">Una multitud en La Noche de los Museos</a></h3>Más de cinco mil personas se acercaron a disfrutar de la agenda cultural ofrecida por la Pinacoteca del Ministerio de Educación <a href="http://www.bnm.me.gov.ar/novedades/?p=34132">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">12 OCT</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34082"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2022/10/pizarnik-inauguracion-3.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34082">Con una amplia concurrencia se inauguró la exposición en homenaje a Alejandra Pizarnik</a></h3>A cincuenta años de la muerte de la poeta, la BNM presenta la muestra Flora Alejandra. Los jardines de Pizarnik en <a href="http://www.bnm.me.gov.ar/novedades/?p=34082">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 "><div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">14 SEP</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=34053"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2022/09/expo-pizarnik.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=34053">Alejandra Pizarnik en la BNM</a></h3>En el año del 50 aniversario de la muerte de Pizarnik,  invitamos a la muestra Flora Alejandra. Los jardines de Pizarnik, <a href="http://www.bnm.me.gov.ar/novedades/?p=34053">[...] </a></div></div></div><div class="post col-sm-12 col-md-6 col-lg-4 ">
+21c2
+<div class="panel panel-noticias"><div class="panel-heading">
+    <div class="fecha_div"><span class="fecha">29 AGO</span></div><a href="http://www.bnm.me.gov.ar/novedades/?p=33987"><div class="crop-post"><img src="http://www.bnm.me.gov.ar/novedades/wp-content/uploads/2022/08/Libro-dorado-con-R-en-lomo.jpg" /></div></a></div><div class="panel-body copete"><h3 class="panel-titulo"><a href="http://www.bnm.me.gov.ar/novedades/?p=33987">Las Elegías de Duino, según Pizarnik</a></h3>En la BNM contamos con una parte importante de la biblioteca que perteneció a la poetisa argentina Alejandra Pizarnik (otra parte <a href="http://www.bnm.me.gov.ar/novedades/?p=33987">[...] </a></div></div></div>
+
+                <!--div class="post col-sm-12 col-md-6 col-lg-4">
+                    <div class="panel panel-default panel-extra" style="border-top: 2px solid;  border-color:#d8d8d8; ">
+                        <div class="panel-extra-heading" ><a class="btn btn-lg btn-danger" href="novedades/">ver todas las noticias <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                        <div class="panel-body panel-extra-item2">
+                            <p>¿Querés recibir en tu correo electrónico las noticias sobre los servicios, eventos y actividades de la Biblioteca y del Sistema Nacional de Bibliotecas Escolares y Unidades de Información Educativa?</p>
+                            <p><a class="btn btn-lg btn-danger panel-extra-btn2" href="mailto:bnmprensa@educacion.gob.ar"><i class="fa fa-envelope-o fa-2x"></i><br/>Suscribite <br/></a></p>                        </div>
+                    </div>
+                </div-->
+            </div>
+         
+
+         <div class="row">
+               
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8"><div class="separador-vermas"><a class="btn btn-danger btn-sm pull-right" href="novedades/">ver todas <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div></div>
+                    </div> 
+            </div>
+         <div class="row">
+            <div class="col-sm-12 espaciador"></div>
+        </div>
+</section>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -200,116 +291,114 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- Pizzurno 953 (C1020ACA)
- +54 (11) 4129-1272
-
-
-
-
-CATÁLOGO Y BIBLIOTECA DIGITAL
-Todas las colecciones digitales
-
-
-
-
-LA BIBLIOTECA
-Horarios de atención, contactos
-Cómo asociarse
-Solicitar visitas guiadas
-
-
-
-
-NOTICIAS
-Enterate de las noticias y actividades de la biblioteca
- Suscribite para recibirlas en tu correo
-
-
-
-
-
-
-
-Los libros, documentos e imágenes de la sección Catálogo y Biblioteca Digital pertenecen al dominio público.
-Los demás contenidos de esta web están bajoLicencia Creative Commons Atribución 2.5 Argentina.
-Biblioteca Nacional de Maestros porBiblioteca Nacional de Maestros se distribuye bajo unaLicencia Creative Commons Atribución 4.0 Internacional.Basada en una obra enhttp://www.bnm.me.gov.ar
-
-
-
-
-
-
-www.bnm.me.gov.ar es un sitio oficial delGobierno Argentino
-
-
-
-
-
-
+</script>
+<!--End of Tawk.to Script-->
+
+<div class="footer-fixed">
+</div><div>
+</div>
+	<footer>
+		<div class="footer-bg-top">
+				<div class="container">
+					<div class="row footer-top">
+						<div class="col-md-12 col-lg-12">
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-12"><div class="footerlogome"><a href="http://argentina.gob.ar/educacion/" title="Ir al sitio del Ministerio de Educación"><img src="/img/ministerio-de-educacion.png" height="65"></a></div></div>
+								<div class="col-md-8 col-sm-8 col-xs-12">
+									<ul class="list-inline list-inline-footer pull-right">
+										<li><a href="mailto:sugerenciasbnm@educacion.gob.ar">
+											<span class="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+											</span>
+										</a></li>
+										
+										<li><a href="https://www.facebook.com/BNMArgentina">
+											<span class="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-facebook-f fa-stack-1x fa-inverse"></i>
+											</span>
+										</a></li>
+										<li><a href="https://www.instagram.com/BNMArgentina">
+											<span class="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+											</span>
+										</a></li>
+										<li><a href="https://twitter.com/BNMArgentina">
+											<span class="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+											</span>
+										</a></li>
+										<li><a href="https://www.youtube.com/BNMArgentina">
+											<span class="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+											</span>
+										</a></li>
+									</ul>
+								</div></div></div></div></div></div>
+			<div class="footer-bg-sitemap">
+				<div class="container">
+					<div class="row footer-sitemap">
+						<div class="col-sm-4 col-lg-4">
+							<ul class="list-group">
+								<li class="list-group-item"><a href="/" class="footer-btn-home"></a></li>
+								<li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i> Pizzurno 953 (C1020ACA)</li>
+								<li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i> +54 (11) 4129-1272</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<ul class="list-group">
+								<li class="list-group-item"><h5 class="list-header-footer">CATÁLOGO Y BIBLIOTECA DIGITAL</h5></li>
+								<li class="list-group-item list-group-item-footer"><a href="/catalogos/"><small>Todas las colecciones digitales</small></a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<ul class="list-group">
+								<li class="list-group-item"><h5 class="list-header-footer">LA BIBLIOTECA</h5></li>
+								<li class="list-group-item list-group-item-footer"><a href="/la-biblioteca/informacion/"><small>Horarios de atención, contactos</small></a></li>
+								<li class="list-group-item list-group-item-footer"><a href="/la-biblioteca/informacion/como_asociarse.php"><small>Cómo asociarse</small></a></li>
+								<li class="list-group-item list-group-item-footer"><a href="mailto:bnmvisitas@educacion.gob.ar"><small>Solicitar visitas guiadas</small></a></li>
+							</ul>
+						</div>
+						<!--div class="col-sm-4 col-lg-4">
+							<ul class="list-group">
+								<li class="list-group-item"><h5 class="list-header-footer">NOTICIAS</h5></li>
+								<li class="list-group-item"><p>Enterate de las noticias y actividades de la biblioteca</p></li>
+								<li class="list-group-item"><a class="btn btn-sx btn-danger" href="mailto:bnmprensa@educacion.gob.ar" style="margin-top: width: 100%;"><i class="fa fa-envelope-o fa-lg pull-left"></i> Suscribite para recibirlas en tu correo</a></li>
+							</ul>
+						</div--></div></div></div>
+			<div class="footer-bg-middle">
+				<div class="container">
+					<div class="row footer-med">
+						<div class="col-md-12 col-lg-12">
+							<div class="col-center">
+								Los libros, documentos e imágenes de la sección Catálogo y Biblioteca Digital pertenecen al dominio público.<br />
+								Los demás contenidos de esta web están bajo <a rel="license" href="http://creativecommons.org/licenses/by/2.5/ar/">Licencia Creative Commons Atribución 2.5 Argentina</a>.<a rel="license" href="http://creativecommons.org/licenses/by/2.5/ar/"><br /><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/2.5/ar/88x31.png" /></a>
+								<!--small><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Biblioteca Nacional de Maestros</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="/" property="cc:attributionName" rel="cc:attributionURL">Biblioteca Nacional de Maestros</a> se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.<br />Basada en una obra en <a xmlns:dct="http://purl.org/dc/terms/" href="http://www.bnm.me.gov.ar" rel="dct:source">http://www.bnm.me.gov.ar</a></small-->
+							</div></div></div></div></div>
+			<!--div class="footer-bg-bottom">
+				<div class="container">
+					<div class="row footer-bottom hidden-xs">
+						<div class="col-md-12 col-lg-12">
+							<div class="col-center">
+								<p class="pull-left space-txt"><a href="http://www.bnm.me.gov.ar">www.bnm.me.gov.ar</a> es un sitio oficial del <strong>Gobierno Argentino</strong> </p>
+								<a href="http://www.casarosada.gob.ar/" class="presidencia"><img src="/img/argentinagobar.png"></a>
+							</div></div></div></div></div-->
+</footer>
+
+		
+<script>
     gtag('event', 'descarga', {
         'send_to': 'events',
         'event_category': 'bibiotecadigital',
         'event_action': 'descargapdf',
          });
+</script>
 
-
-
-
-7
-
+	</body>
+</html>
 0
 

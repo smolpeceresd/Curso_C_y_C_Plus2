@@ -101,8 +101,12 @@ string removeHTMLTags(const std::string& text) {
     // Expresión regular para buscar etiquetas HTML
     std::regex tabulador("\t");
     std::string result = std::regex_replace(text, tabulador, "");
+    std::regex salto("\n");
+    result = std::regex_replace(text,salto, "");
     std::regex espacio("( )+(?=<)");
     result=std::regex_replace(result,espacio,"");
+    std::regex scripts("(<script[^>]*>[^<]*</script>)");
+    result=std::regex_replace(result,scripts,"");
     std::regex etiquetas("<[^>]*>");
     result=std::regex_replace(result,etiquetas,"");
 
@@ -117,7 +121,7 @@ string getExtraccionInterior(const string &expresion, const string &texto){
 }
 
 string getExtraccionExacta(const string &expresion, const string &texto){
-    regex hrefPattern("href=\"([^\"]*)\"");
+    regex hrefPattern(expresion);
     smatch match;
     if (regex_search(texto, match, hrefPattern)) {
         string hrefValue = match.str(1);
@@ -131,7 +135,7 @@ set<string> getEnlaces(const string &html){
     /**
      * @obtengo todos los <a disponibles
      */
-    regex regexPattern("<a[^>]*>.*?<\\/a>");
+    regex regexPattern("href=\"([^\"]*)\"");
     smatch match;
     vector<string> aTags;set<string>enlaces;
 
@@ -141,18 +145,20 @@ set<string> getEnlaces(const string &html){
         aTags.push_back(aTag);
         searchStart = match.suffix().first;
     }
-
     /**
      * @De estos debo separar el enlace y el texto
      */
     // Imprimir las etiquetas <a> encontradas
     string href,texto;
-    cout << "Etiquetas <a> encontradas:" << endl;
+    //cout << "Etiquetas <a> encontradas:" << endl;
     for (const string& aTag : aTags) {
         href=getExtraccionExacta("href=\"([^\"]*)\"",aTag);
-        if(href.at(0)=='/' || href.at(0)=='h'){
+        if(href.size()>0){
 
-            enlaces.insert(href);
+            if(href.at(0)=='/' || href.at(0)=='h'){
+
+                enlaces.insert(href);
+            }
         }
         //  texto=getExtraccionInterior("(<([^>]+)>)(.*?)(<//([a-z]+)>)*",aTag);
         // cout<<"\n"<<aTag<<"\nHREF: "<<href<<"\nTexto: "<<texto;
@@ -163,7 +169,7 @@ set<string> getEnlaces(const string &html){
 int main()
 {
     int eleccion{0};
-    string buffer,hostname="168.83.78.194",path="/";;
+    string buffer,hostname="168.83.78.194",hostaux{""},path="/";;
     do{
         cout<<"\nhostname: "<<hostname<<" path: "<<path;
         try {
@@ -171,12 +177,14 @@ int main()
 
         } catch(string error) {
             cout<<"\nERROR: "<<error;
+            hostname=hostaux;
+            path="";
         }
-        int body = buffer.find("<body");
+        int body = static_cast<int>(buffer.find("<body"));
         buffer=buffer.substr(body,(buffer.size()-1)-body);
         set<string> enlaces_= getEnlaces(buffer);
         vector<string> enlaces{enlaces_.begin(),enlaces_.end()};
-        buffer = removeHTMLTags(buffer);
+        // buffer = removeHTMLTags(buffer);
         ofstream fichero;fichero.open("HTML.txt",ios::out | ios::trunc);
         fichero<<buffer;
         fichero.close();
@@ -184,24 +192,33 @@ int main()
 
         cout<<"\n A donde quieres navegar?";
         for(int i=0; i< enlaces.size();i++){
-            /*   if(enlaces.at(i).at(0)=='/'){
+            if(enlaces.at(i).at(0)=='/'){
                 cout<<"\n"<<i<<". http://"<<hostname<<enlaces.at(i);
             }else{
 
                 cout<<"\n"<<i<<". "<<enlaces.at(i);
-            }*/
-            cout<<"\n"<<i<<". "<<enlaces.at(i);
+            }
+
         }
-        cout<<"\n -1 Para salir";
+        cout<<"\n-1 Para salir";
         cout<<"\n IR ";cin>>eleccion;
         if(eleccion!=-1){
-
             if(enlaces.at(eleccion).at(0)=='/'){
                 path=enlaces.at(eleccion);
+            }else if(enlaces.at(eleccion).at(0)=='h'){
+                if(enlaces.at(eleccion).find("https")!=-1){
+                    system("cls");
+                    cout<<"\n A la ruta :\n"<<enlaces.at(eleccion)<<"\n No se puede navegar, esta potegida";
+                }else{
+                    int primerSlash=static_cast<int>(enlaces.at(eleccion).find("//"));
+                    int path_  = static_cast<int>(enlaces.at(eleccion).find('/',primerSlash+2));
+                    hostaux=hostname;
+                    hostname=enlaces.at(eleccion).substr(7,(path_-7));
+                    path=enlaces.at(eleccion).substr(path_,((enlaces.at(eleccion).size())-path_));
+                    system("cls");
+                }
             }
         }
-
-        system("cls");
     }while (eleccion!=-1);
     cout<<"Finalizado \n\n";
     return 0;
