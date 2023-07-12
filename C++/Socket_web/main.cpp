@@ -104,8 +104,14 @@ string removeHTMLTags(const std::string& text) {
     std::string result = std::regex_replace(text, tabulador, "");
     std::regex espacio("( )+(?=<)");
     result=std::regex_replace(result,espacio,"");
+    /**
+     * @brief scripts para quitar las funciones y variables
+     */
     std::regex scripts("(<script[^>]*>[^<]*</script>)");
     result=std::regex_replace(result,scripts,"");
+    /**
+     * @brief etiquetas para quitar las etiquetas generales
+     */
     std::regex etiquetas("<[^>]*>");
     result=std::regex_replace(result,etiquetas,"");
 
@@ -128,17 +134,10 @@ string trocea(const string &linea, char caracter){
             }
         }
     }
-
     /*for(int i=0;i<subcadenas.size();i++){
         cout<<"\n"<<i<<". "<<subcadenas.at(i);
     }*/
     return subcadenas;
-}
-
-string getExtraccionInterior(const string &expresion, const string &texto){
-    std::regex expresion_(expresion);
-    std::string result = std::regex_replace(texto,expresion_, "");
-    return result;
 }
 
 string getExtraccionExacta(const string &expresion, const string &texto){
@@ -181,8 +180,6 @@ set<string> getEnlaces(const string &html){
                 enlaces.insert(href);
             }
         }
-        //  texto=getExtraccionInterior("(<([^>]+)>)(.*?)(<//([a-z]+)>)*",aTag);
-        // cout<<"\n"<<aTag<<"\nHREF: "<<href<<"\nTexto: "<<texto;
     }
     return enlaces;
 }
@@ -210,6 +207,10 @@ int main()
         ofstream fichero;fichero.open("HTML.txt",ios::out | ios::trunc);
         fichero<<buffer;
         fichero.close();
+        /**
+         * Impresion de la página :
+         */
+        cout<<"\n La pagina: \n"<<buffer;
         cout<<"\n Se ha creado un fichero HTML para la lectura del HTML.";
 
         cout<<"\n A donde quieres navegar?";
@@ -225,9 +226,10 @@ int main()
         cout<<"\n-1 Para salir";
         cout<<"\n IR ";cin>>eleccion;
         if(eleccion!=-1){
-            if(eleccion>0 && eleccion <enlaces.size()){
+            if(eleccion>=0 && eleccion <enlaces.size()){
                 if(enlaces.at(eleccion).at(0)=='/'){
                     path=enlaces.at(eleccion);
+                    system("cls");
                 }else if(enlaces.at(eleccion).at(0)=='h'){
                     if(enlaces.at(eleccion).find("https")!=-1){
                         system("cls");
@@ -241,6 +243,7 @@ int main()
                         system("cls");
                     }
                 }
+
             }else{
                 system("cls");
                 cout<<"\n Ruta mal escogida";
