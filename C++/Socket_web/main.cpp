@@ -7,7 +7,8 @@
 #include <fstream>
 #include <regex>
 #include <set>
-
+#include <string>
+#include <sstream>
 using namespace std;
 
 string getHTML(char* hostname_,char *path){
@@ -101,8 +102,6 @@ string removeHTMLTags(const std::string& text) {
     // Expresión regular para buscar etiquetas HTML
     std::regex tabulador("\t");
     std::string result = std::regex_replace(text, tabulador, "");
-    std::regex salto("\n");
-    result = std::regex_replace(text,salto, "");
     std::regex espacio("( )+(?=<)");
     result=std::regex_replace(result,espacio,"");
     std::regex scripts("(<script[^>]*>[^<]*</script>)");
@@ -113,6 +112,28 @@ string removeHTMLTags(const std::string& text) {
     return result;
 }
 
+
+string trocea(const string &linea, char caracter){
+
+    string subcadenas;
+    std::stringstream ss(linea);
+    std::string subcadena;
+
+    while (std::getline(ss,subcadena,caracter)) {
+        if(subcadena.size()>1){
+            if(subcadena.at(0)!='\n'){
+                subcadenas+="\n"+subcadena;
+            }else{
+                subcadenas+=subcadena;
+            }
+        }
+    }
+
+    /*for(int i=0;i<subcadenas.size();i++){
+        cout<<"\n"<<i<<". "<<subcadenas.at(i);
+    }*/
+    return subcadenas;
+}
 
 string getExtraccionInterior(const string &expresion, const string &texto){
     std::regex expresion_(expresion);
@@ -184,7 +205,8 @@ int main()
         buffer=buffer.substr(body,(buffer.size()-1)-body);
         set<string> enlaces_= getEnlaces(buffer);
         vector<string> enlaces{enlaces_.begin(),enlaces_.end()};
-        // buffer = removeHTMLTags(buffer);
+        buffer = removeHTMLTags(buffer);
+        buffer = trocea(buffer,'\n');
         ofstream fichero;fichero.open("HTML.txt",ios::out | ios::trunc);
         fichero<<buffer;
         fichero.close();
@@ -203,23 +225,29 @@ int main()
         cout<<"\n-1 Para salir";
         cout<<"\n IR ";cin>>eleccion;
         if(eleccion!=-1){
-            if(enlaces.at(eleccion).at(0)=='/'){
-                path=enlaces.at(eleccion);
-            }else if(enlaces.at(eleccion).at(0)=='h'){
-                if(enlaces.at(eleccion).find("https")!=-1){
-                    system("cls");
-                    cout<<"\n A la ruta :\n"<<enlaces.at(eleccion)<<"\n No se puede navegar, esta potegida";
-                }else{
-                    int primerSlash=static_cast<int>(enlaces.at(eleccion).find("//"));
-                    int path_  = static_cast<int>(enlaces.at(eleccion).find('/',primerSlash+2));
-                    hostaux=hostname;
-                    hostname=enlaces.at(eleccion).substr(7,(path_-7));
-                    path=enlaces.at(eleccion).substr(path_,((enlaces.at(eleccion).size())-path_));
-                    system("cls");
+            if(eleccion>0 && eleccion <enlaces.size()){
+                if(enlaces.at(eleccion).at(0)=='/'){
+                    path=enlaces.at(eleccion);
+                }else if(enlaces.at(eleccion).at(0)=='h'){
+                    if(enlaces.at(eleccion).find("https")!=-1){
+                        system("cls");
+                        cout<<"\n A la ruta :\n"<<enlaces.at(eleccion)<<"\n No se puede navegar, esta potegida";
+                    }else{
+                        int primerSlash=static_cast<int>(enlaces.at(eleccion).find("//"));
+                        int path_  = static_cast<int>(enlaces.at(eleccion).find('/',primerSlash+2));
+                        hostaux=hostname;
+                        hostname=enlaces.at(eleccion).substr(7,(path_-7));
+                        path=enlaces.at(eleccion).substr(path_,((enlaces.at(eleccion).size())-path_));
+                        system("cls");
+                    }
                 }
+            }else{
+                system("cls");
+                cout<<"\n Ruta mal escogida";
             }
         }
     }while (eleccion!=-1);
+    system("cls");
     cout<<"Finalizado \n\n";
     return 0;
 }

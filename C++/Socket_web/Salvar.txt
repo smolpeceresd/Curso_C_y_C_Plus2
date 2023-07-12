@@ -1,0 +1,10 @@
+    std::regex tabulador("\t");
+    std::string result = std::regex_replace(text, tabulador, "");
+    std::regex salto("\n");
+    result = std::regex_replace(text,salto, "");
+    std::regex espacio("( )+(?=<)");
+    result=std::regex_replace(result,espacio,"");
+    std::regex scripts("(<script[^>]*>[^<]*</script>)");
+    result=std::regex_replace(result,scripts,"");
+    std::regex etiquetas("<[^>]*>");
+    result=std::regex_replace(result,etiquetas,"");
