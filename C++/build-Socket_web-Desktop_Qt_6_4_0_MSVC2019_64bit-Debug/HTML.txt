@@ -1,0 +1,315 @@
+
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJN9BP8');
+
+
+
+
+Saltar al contenido principal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Noticias
+
+
+La Biblioteca
+
+
+Catálogo
+
+
+Biblioteca Digital
+
+
+Redes Federales
+
+
+Programas y Proyectos
+
+
+Actividades
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+buscar:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+29bf
+
+
+
+
+
+ Inicio
+Programas y proyectos
+
+Programas y proyectos
+
+
+Presentamos las acciones que realizamos para preservar y difundir nuestro acervo bibliográfico.
+
+
+
+
+
+
+
+
+
+
+
+
+
+MHEDAR
+
+El programa Memoria e Historia de la Educación Argentina busca contribuir a la investigación y al conocimiento del pasado de la educación en nuestro país.
+
+ 
+
+     
+
+
+
+
+
+
+Proyecto de Preservación
+
+Implementamos políticas de preservación para garantizarte el acceso a largo plazo al patrimonio documental que se alberga en nuestra biblioteca.
+
+ 
+
+     
+
+
+
+
+
+
+
+
+
+
+
+Mujeres educadoras argentinas
+
+Un homenaje a aquellas mujeres que fueron pioneras y a aquellas mujeres que las sucedieron proponiéndose el gran desafío de establecer un dispositivo escolar, organizado y centralizado, con la meta de aplicar en la sociedad, en forma concreta, sus ideas sobre la educación.
+
+ 
+
+     
+
+
+
+
+
+
+Libros como puentes
+
+Una invitación al encuentro de niños, niñas y familias con los libros que habitan las bibliotecas escolares de nuestro país. A través de propuestas, estrategias, guías y sugerencias de actividades, buscamos generar lazos que acompañen las situaciones de lectura y escritura que se realizan desde las familias y las instituciones educativas.
+
+ 
+
+     
+
+
+
+
+
+
+
+
+
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ed8140c4a7c62581799dd44/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Pizzurno 953 (C1020ACA)
+ +54 (11) 4129-1272
+
+
+
+
+CATÁLOGO Y BIBLIOTECA DIGITAL
+Todas las colecciones digitales
+
+
+
+
+LA BIBLIOTECA
+Horarios de atención, contactos
+Cómo asociarse
+Solicitar visitas guiadas
+
+
+
+
+NOTICIAS
+Enterate de las noticias y actividades de la biblioteca
+ Suscribite para recibirlas en tu correo
+
+
+
+
+
+
+
+Los libros, documentos e imágenes de la sección Catálogo y Biblioteca Digital pertenecen al dominio público.
+Los demás contenidos de esta web están bajoLicencia Creative Commons Atribución 2.5 Argentina.
+Biblioteca Nacional de Maestros porBiblioteca Nacional de Maestros se distribuye bajo unaLicencia Creative Commons Atribución 4.0 Internacional.Basada en una obra enhttp://www.bnm.me.gov.ar
+
+
+
+
+
+
+www.bnm.me.gov.ar es un sitio oficial delGobierno Argentino
+
+
+
+
+
+
+    gtag('event', 'descarga', {
+        'send_to': 'events',
+        'event_category': 'bibiotecadigital',
+        'event_action': 'descargapdf',
+         });
+
+
+
+
+7
+
+0
+
