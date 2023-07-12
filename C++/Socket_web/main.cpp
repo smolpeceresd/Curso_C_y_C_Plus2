@@ -224,7 +224,7 @@ int main()
 
         }
         cout<<"\n-1 Para salir";
-        cout<<"\n IR ";cin>>eleccion;
+        cout<<"\nIr a enlace numero: ";cin>>eleccion;
         if(eleccion!=-1){
             if(eleccion>=0 && eleccion <enlaces.size()){
                 if(enlaces.at(eleccion).at(0)=='/'){
