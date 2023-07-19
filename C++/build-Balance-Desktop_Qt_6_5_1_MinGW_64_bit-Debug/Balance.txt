@@ -1,0 +1,7 @@
+
+Total Activos:		 0
+Total Pasivos:		 0
+Total Patrimonio:	0
+Comprobante: 
+ Activos = Pasivos + Patrimonios 
+ 0 = 0

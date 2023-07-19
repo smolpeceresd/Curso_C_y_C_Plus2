@@ -8,8 +8,6 @@
 #include <set>
 #include <string>
 #include <sstream>
-#include <locale.h>
-
 using namespace std;
 
 string getHTML(char* hostname_,char *path){
@@ -187,13 +185,13 @@ set<string> getEnlaces(const string &html){
 
 int main()
 {
-   locale::global(locale(""));
     int eleccion{0};
     string buffer,hostname="168.83.78.194",hostaux{""},path="/";;
     do{
         cout<<"\nhostname: "<<hostname<<" path: "<<path;
         try {
             buffer = getHTML(const_cast<char*>(hostname.c_str()),const_cast<char*>(path.c_str()));
+
         } catch(string error) {
             cout<<"\nERROR: "<<error;
             hostname=hostaux;
@@ -215,23 +213,24 @@ int main()
         cout<<"\n Se ha creado un fichero HTML para la lectura del HTML.";
 
         cout<<"\n A donde quieres navegar?";
-        for(int i=0; i< static_cast<int>(enlaces.size());i++){
+        for(int i=0; i< enlaces.size();i++){
             if(enlaces.at(i).at(0)=='/'){
                 cout<<"\n"<<i<<". http://"<<hostname<<enlaces.at(i);
             }else{
 
                 cout<<"\n"<<i<<". "<<enlaces.at(i);
             }
+
         }
         cout<<"\n-1 Para salir";
         cout<<"\nIr a enlace numero: ";cin>>eleccion;
         if(eleccion!=-1){
-            if(eleccion>=0 && eleccion < static_cast<int>(enlaces.size())){
+            if(eleccion>=0 && eleccion <enlaces.size()){
                 if(enlaces.at(eleccion).at(0)=='/'){
                     path=enlaces.at(eleccion);
                     system("cls");
                 }else if(enlaces.at(eleccion).at(0)=='h'){
-                    if(static_cast<int>(enlaces.at(eleccion).find("https"))!=-1){
+                    if(enlaces.at(eleccion).find("https")!=-1){
                         system("cls");
                         cout<<"\n A la ruta :\n"<<enlaces.at(eleccion)<<"\n No se puede navegar, esta potegida";
                     }else{
@@ -243,6 +242,7 @@ int main()
                         system("cls");
                     }
                 }
+
             }else{
                 system("cls");
                 cout<<"\n Ruta mal escogida";
@@ -250,6 +250,6 @@ int main()
         }
     }while (eleccion!=-1);
     system("cls");
-    cout<<"Finalizado\n\n";
+    cout<<"Finalizado número \n\n";
     return 0;
 }

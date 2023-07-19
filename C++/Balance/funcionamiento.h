@@ -39,12 +39,12 @@ void leerFichero(const string &nombreFich, Balance *balance){
     ifstream fich;fich.open(nombreFich,ios::in);
 
     if(fich.fail()){
-        cout<<"\nEl archivo: "<<nombreFich<<" no se pha podido abrir";
+        throw string{"\nEl archivo: "+nombreFich+" no se pha podido abrir"};
     }else{
         while(!fich.eof()){
             getline(fich,linea);
             //cout<<"\n"<<linea;
-            if(linea.find("/")==-1){
+            if(static_cast<int>(linea.find("/"))==-1){
                 param=trocea(linea,'\t');
                 balance->addLista(Tipo(param.at(0),stoi(param.at(1)),param.at(2)));
             }
@@ -72,12 +72,12 @@ void addActPas(const string &nombreFich,Balance *balance){
     vector<string> param;
     ifstream fich;fich.open(nombreFich,ios::in);
     if(fich.fail()){
-        cout<<"\nEl archivo: "<<nombreFich<<" no se ha podido abrir.";
+        throw string{"\nEl archivo: "+nombreFich+" no se ha podido abrir."};
     }else{
         while(!fich.eof()){
             getline(fich,linea);
             //  cout<<"\n"<<linea;
-            if(linea.find("#")==-1){
+            if(static_cast<int>(linea.find("#"))==-1){
                 param=trocea(linea,'\t');
                 int item = inLista(param.at(0),balance->getLista_tipos());
                 if(item != -1){
