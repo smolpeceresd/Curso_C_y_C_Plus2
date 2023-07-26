@@ -3,11 +3,18 @@
 #include <cobject.h>
 #include <iostream>
 using namespace std;
-
-class CPalabras:CObject<string>
+template <typename T>
+class CPalabras: public CObject<T>
 {
 public:
-    CPalabras();
+    CPalabras(const string & palabra);
+
+    int getCantidad() const;
+    void setCantidad(int newCantidad);
+    void incrementcantidad();
+
+private:
+    int cantidad;
 };
 
 #endif // CPALABRAS_H

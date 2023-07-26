@@ -3,7 +3,7 @@
 template<typename T>
 CObject<T>::CObject(const T & dato_)
 {
-    this->dato=dato_;
+    this->dato= dato_;
 }
 
 template <typename T>

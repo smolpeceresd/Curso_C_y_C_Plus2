@@ -1,6 +1,7 @@
 #include "cdiccionario.h"
 
-CDiccionario::CDiccionario()
+template<typename T>
+CDiccionario<T>::CDiccionario():CObject<T>(0)
 {
 
 }

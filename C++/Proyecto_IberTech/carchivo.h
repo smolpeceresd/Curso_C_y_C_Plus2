@@ -5,18 +5,19 @@
 #include <vector>
 #include <cdiccionario.h>
 #include <cobject.h>
+#include <fstream>
 using namespace std;
 
-
-class CArchivo: public CObject<string>
+template <typename T>
+class CArchivo : public CObject<T>
 {
 public:
-    CArchivo(const string &nombre_archivo, const char read_write );
+    CArchivo(const string &nombre_archivo);
     ~CArchivo();
 
-
 private:
-    CDiccionario diccionario_Palabras;
+    CDiccionario<int> diccionario_Palabras;
+
 };
 
 #endif // CARCHIVO_H
