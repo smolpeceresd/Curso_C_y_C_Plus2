@@ -15,6 +15,10 @@ public:
     T getDato() const;
     void setDato(const T &newDato);
 
+    virtual void serializacion(const int read_write)const ;
+    virtual void print() const;
+    virtual void toString() const;
+
 private:
     T dato;
 };

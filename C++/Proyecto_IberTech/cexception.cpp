@@ -4,3 +4,8 @@ CException::CException()
 {
 
 }
+
+CException::~CException()
+{
+
+}

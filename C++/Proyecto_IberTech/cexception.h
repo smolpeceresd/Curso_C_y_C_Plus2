@@ -6,6 +6,7 @@ class CException
 {
 public:
     CException();
+    ~CException();
 };
 
 #endif // CEXCEPTION_H

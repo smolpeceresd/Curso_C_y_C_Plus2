@@ -6,6 +6,12 @@ CObject<T>::CObject(const T & dato_)
     this->dato= dato_;
 }
 
+template<typename T>
+CObject<T>::~CObject()
+{
+
+}
+
 template <typename T>
 T CObject<T>::getDato() const
 {

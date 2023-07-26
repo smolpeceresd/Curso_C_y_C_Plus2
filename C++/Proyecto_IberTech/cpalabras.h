@@ -8,6 +8,7 @@ class CPalabras: public CObject<T>
 {
 public:
     CPalabras(const string & palabra);
+    ~CPalabras();
 
     int getCantidad() const;
     void setCantidad(int newCantidad);

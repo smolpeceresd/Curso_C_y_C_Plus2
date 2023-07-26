@@ -1,9 +1,15 @@
 #include "cpalabras.h"
 
 template <typename T>
-CPalabras<T>::CPalabras(const string &palabra):CObject<T>()
+CPalabras<T>::CPalabras(const string &palabra):CObject<T>(palabra)
 {
     this->cantidad=1;
+}
+
+template<typename T>
+CPalabras<T>::~CPalabras()
+{
+
 }
 
 template <typename T>
